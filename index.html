@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <script src="js/jquery-3.1.0.js"></script>
+    <script>
+        $(function () {
+            $("#btn1").on("click", function () {
+                $("img").addClass("img-circle")
+            });
+            $("#btn2").on("click", function () {
+                $("img").removeClass("img-circle")
+            });
+            $("#btn3").on("click", function () {
+                $("img").toggleClass("img-circle")
+            });
+        })
+    </script>
+</head>
+<body>
+<div class="container">
+    <div class="panel panel-primary">
+        <div class="panel-heading">动态添加</div>
+        <div class="panel-body">
+            <button class="btn btn-primary" id="btn1">addClass</button>
+            <button class="btn btn-primary" id="btn2">removeClass</button>
+            <button class="btn btn-primary" id="btn3">toggleClass</button>
+            <br>
+            <img src="images/lh.jpg" class="">
+        </div>
+    </div>
+</div>
+</body>
+</html>
